@@ -1,0 +1,13 @@
+# YOLO11 detection and the ByteTrack tracker. PyTorch comes in with it (a CPU build on Windows;
+# for an NVIDIA GPU install the CUDA build first, see the README).
+ultralytics>=8.3.0,<9
+
+# Detections container, box and label drawing.
+supervision>=0.31,<1
+
+opencv-python>=4.9
+numpy>=1.26
+pandas>=2.0
+
+# The UI uses width="stretch" on images and buttons and download_button(on_click="ignore").
+streamlit>=1.67,<2

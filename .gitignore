@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Downloaded at run time
+samples/*.mp4
+samples/*.part
+*.pt
+
+# Exported logs and renders
+*.csv

@@ -1,0 +1,10 @@
+[server]
+# Traffic clips are often bigger than Streamlit's 200 MB default (value is in MB).
+maxUploadSize = 1000
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "dark"
+primaryColor = "#06b6d4"
