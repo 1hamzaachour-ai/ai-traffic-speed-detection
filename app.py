@@ -314,8 +314,8 @@ else:
     button_label = "▶ Start"
 
 button_a, button_b, status_column = st.columns([1, 1, 4], vertical_alignment="center")
-button_a.button(
-    button_label, type="primary", on_click=toggle_running,
+button_a.button(  # a fixed key keeps it one widget while its label changes, so no stale copy lingers
+    button_label, type="primary", on_click=toggle_running, key="toggle_run",
     disabled=source is None or problem is not None, width="stretch",
 )
 button_b.button("↺ Reset", on_click=dispose_run, disabled=run is None, width="stretch")
