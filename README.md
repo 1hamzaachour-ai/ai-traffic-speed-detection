@@ -15,13 +15,16 @@ counts each vehicle once as it crosses, per class.
 
 ## Demo
 
-[![The dashboard detecting, tracking and timing vehicles on a motorway clip](docs/demo.gif)](docs/demo.mp4)
+![The dashboard detecting, tracking and timing vehicles on a motorway clip](docs/demo.gif)
 
-Click the preview for the full-quality video (37 s). It shows the built-in sample clip, then **Start**,
-then the speed-limit slider being moved while the video plays (vehicles above the limit turn red), and
-finally **Pause** with the vehicle log ready to download as CSV. It was recorded from the real app on an
-RTX 4050 laptop GPU. The 4K clip plays at roughly half speed because decoding it caps the app at about
-12 frames per second, as the status line shows. The footage is Roboflow's Supervision demo video.
+The capture shows the built-in sample clip, then **Start**, then the speed-limit slider being moved
+while the video plays (vehicles above the limit turn red), and finally **Pause** with the vehicle log
+ready to download as CSV. It was recorded from the real app on an RTX 4050 laptop GPU. The 4K clip plays
+at roughly half speed because decoding it caps the app at about 12 frames per second, as the status line
+shows. The footage is Roboflow's Supervision demo video.
+
+A sharper 37 s version is in [docs/demo.mp4](docs/demo.mp4?raw=true) (3.4 MB). GitHub does not play MP4
+files stored in a repository, so that link downloads it.
 
 ## Quick start
 
