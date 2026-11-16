@@ -13,6 +13,8 @@ tracking is **ByteTrack**, detections and drawing use **Supervision**, and the r
 Every box is labelled `#ID | Class | Speed km/h` and drags a fading trail behind it. A virtual line
 counts each vehicle once as it crosses, per class.
 
+![Screenshot of the dashboard: KPI cards on top, the motorway video with green, blue and red boxes, and the vehicle log below](docs/dashboard.jpg)
+
 ## Demo
 
 ![The dashboard detecting, tracking and timing vehicles on a motorway clip](docs/demo.gif)
@@ -162,8 +164,8 @@ This is a demo of the technique, not a certified speed-enforcement device.
 Ultralytics YOLO11 is licensed under AGPL-3.0. If you run this as a service for other people you must
 publish your source under the same licence or buy an Ultralytics enterprise licence. The sample clip is
 the `vehicles.mp4` demo video that Roboflow publishes for Supervision. The clip itself is downloaded on
-first use and is not stored in this repository, but the capture in `docs/` shows frames of it, so check
-its terms before reusing that capture.
+first use and is not stored in this repository, but the screenshot and the capture in `docs/` show
+frames of it, so check its terms before reusing them.
 
 ## Project layout
 
@@ -173,6 +175,6 @@ detector.py        Detection, tracking, perspective transform, speed, counting, 
 requirements.txt
 tests/             pytest suite for the geometry, speed, counting, camera and pipeline logic
 .streamlit/        Upload limit (1 GB) and theme
-docs/              Demo capture (MP4, plus a GIF preview used by this README)
+docs/              Dashboard screenshot and demo capture (MP4, plus the GIF preview used here)
 samples/           Sample clip, downloaded on first use
 ```
