@@ -13,6 +13,16 @@ tracking is **ByteTrack**, detections and drawing use **Supervision**, and the r
 Every box is labelled `#ID | Class | Speed km/h` and drags a fading trail behind it. A virtual line
 counts each vehicle once as it crosses, per class.
 
+## Demo
+
+[![The dashboard detecting, tracking and timing vehicles on a motorway clip](docs/demo.gif)](docs/demo.mp4)
+
+Click the preview for the full-quality video (37 s). It shows the built-in sample clip, then **Start**,
+then the speed-limit slider being moved while the video plays (vehicles above the limit turn red), and
+finally **Pause** with the vehicle log ready to download as CSV. It was recorded from the real app on an
+RTX 4050 laptop GPU. The 4K clip plays at roughly half speed because decoding it caps the app at about
+12 frames per second, as the status line shows. The footage is Roboflow's Supervision demo video.
+
 ## Quick start
 
 ```bash
@@ -148,8 +158,9 @@ This is a demo of the technique, not a certified speed-enforcement device.
 
 Ultralytics YOLO11 is licensed under AGPL-3.0. If you run this as a service for other people you must
 publish your source under the same licence or buy an Ultralytics enterprise licence. The sample clip is
-the `vehicles.mp4` demo video that Roboflow publishes for Supervision. It is downloaded on first use and
-is not part of this project, so check its terms before redistributing it.
+the `vehicles.mp4` demo video that Roboflow publishes for Supervision. The clip itself is downloaded on
+first use and is not stored in this repository, but the capture in `docs/` shows frames of it, so check
+its terms before reusing that capture.
 
 ## Project layout
 
@@ -159,5 +170,6 @@ detector.py        Detection, tracking, perspective transform, speed, counting, 
 requirements.txt
 tests/             pytest suite for the geometry, speed, counting, camera and pipeline logic
 .streamlit/        Upload limit (1 GB) and theme
+docs/              Demo capture (MP4, plus a GIF preview used by this README)
 samples/           Sample clip, downloaded on first use
 ```
